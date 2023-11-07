@@ -1,0 +1,57 @@
+h1
+{background-color: yellow;
+  font-weight: bold;
+  color: red;
+  text-align: center;
+}
+.dashboard {
+    display: flex;
+}
+
+.sidebar {
+    background-color: #333;
+    color: white;
+    width: 250px;
+    min-height: 100%;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Mengatur elemen <li> horizontal */
+}
+
+.sidebar li {
+    margin: 0;
+    padding: 0;
+    display: flex; /* Mengatur elemen <li> horizontal */
+    align-items: center; /* Untuk tengahkannya vertikal */
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar a:hover {
+    background-color: #555;
+}
+
+.content {
+    background-color: white;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .dashboard {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        min-height: auto;
+    }
+}
